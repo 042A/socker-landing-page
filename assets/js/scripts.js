@@ -167,6 +167,36 @@ $('.feature-carousel').owlCarousel({
         }, 'xml');
     });
 
+        /*=============================================
+            06: Ajax Contact Form
+        ==============================================*/
+
+      
+         $('.contact-form').on('submit', 'form', function(e) {
+            e.preventDefault();
+
+            var $el = $(this);
+
+            $.post($el.attr('action'), $el.serialize(), function(res){
+                res = $.parseJSON( res );
+                $el.parent('.contact-page-form').find('.form-response').html('<span>' + res[1] + '</span>');
+            });
+        });
+      
+    
+    /*============================================
+        07: Preloader
+    ==============================================*/
+
+    $(window).on('load', function(){
+
+        function removePreloader() {
+            var preLoader = $('.preLoader');
+            preLoader.fadeOut();
+        }
+        setTimeout(removePreloader, 250);
+    });
+
 
     /* 08: Content animation
     ==============================================*/
@@ -193,7 +223,12 @@ $('.feature-carousel').owlCarousel({
             }, {offset: '93%'});
         });
     });
-
+ 
+    /*=========================================================
+        09: counter up
+    =========================================================*/
+           $('.counter').counterUp({});
+        
     /*====================================================
         10: Parallax
     ====================================================*/
@@ -221,7 +256,7 @@ $('.feature-carousel').owlCarousel({
         })
         
  /*=====================================================
-    13: parusel
+    13: partner carousel
 =====================================================*/
         $('.partner-carousel').owlCarousel({
             loop: true,
@@ -260,7 +295,7 @@ $('.feature-carousel').owlCarousel({
 
         /* testimonial */
 /*=====================================================
-   13: partner carouse
+   13: partner carousel
 =====================================================*/
         let author = $('.author-carousel')
         author.owlCarousel({
