@@ -83,42 +83,47 @@
                         <!-- banner text -->
                         <div class="banner-text-inner">
 
+                            <style>
+                                
+                                .test123 {
+                                margin-top: 20px;
+                                padding-bottom: 20px;
+                                width: 100%;
+                             
+                                border-radius: 15px;
+                                -webkit-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.3);
+                                -moz-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.3);
+                                box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.3);
+                                background-color:  white;
+                                padding: 15px;
+                                }
+
+                            
+                            </style>
                             <!-- Display the countdown timer in an element -->
-
-<h2 id="demo"class="white-text"></h2>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 11, 2019 00:00:01").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+                          
+            
+<h2 id="demo"class="white-text">Socker - En godisapp</h2>
                             
                             <p class="white-text">Godisentusiastens bästa vän är äntligen här. Skapa familjens favoritblandning tillsammans och skicka smidigt dina preferenser till det stackars sändebudet! </p>
-                            
+                            <div class="test123">
+                                    <h2 class="main inverted" style="color:rgb(20, 20, 20); ">Tack för att du väntar!</h2>
+                                <p>Godisappen kommer att släppas i flera etapper:</p>
+
+                            <!-- Contents -->
+
+<ul class="info-text" style="font-size: 16px;     list-style: none;
+padding-left: 0;">
+
+<li>Inital build (Internt)  - <span style="font-weight: 900; color: rgb(3, 204, 80)">8-05-19</span>  <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Service worker research, installer and cache in place, release for user group.</span></li>
+<li>Alpha 1 (Internt)  -  <span style="font-weight: 900; color: rgb(3, 204, 80)">12-05-19</span>  <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Service worker research, installer and cache in place, release for user group.</span></li>
+<li>Alpha 2 (Internt) -  <span style="font-weight: 900; color: rgb(191, 204, 3)">14-05-19</span>  <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Security and installation.</span></li>
+<li>Alpha 3 (Internt) <span style="font-weight: 900; color: rgb(191, 204, 3)">17-05-19</span> <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Tidy code.</span></li>
+<li>Beta (Öppen) - <span style="font-weight: 900; color: rgb(63, 3, 204)">Förhoppningsvis i Maj!</span><span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Tidy code. Service worker full functionality.</span></li>
+<li>Full release <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Tidy code. Godis Service is now handling all data operations.</span></li>
+<li>Post release (July?) <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Marketing and update strategy.</span></li>
+</ul>
+                                </div>
                         </div>
                         <!-- banner text -->
                     </div>
