@@ -2,209 +2,387 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Document Title -->
-    <title>Socker</title>
+    <!-- Title -->
+    <title>Socker.dev - Hemvist för Socker appen</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <!-- CSS Files -->
-    <!--==== Google Fonts ====-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
-    <!--==== Bootstrap css file ====-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="icon" href="img/core-img/favicon.ico">
 
-    <!--==== Style css file ====-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
 
-    <!--==== Custom css file ====-->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="colorlib-load"></div>
+    </div>
 
-
-    <!-- Main header -->
-    <header class="header">
-        <!-- Start Header Navbar-->
-        <div class="main-header inner-header header-2">
-            <div class="main-menu-wrap">
-                <div class="container">
-                    <div class="row align-items-right">
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-6">
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area animated">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Menu Area Start -->
+                <div class="col-12 col-lg-10">
+                    <div class="menu_area">
+                        <nav class="navbar navbar-expand-lg navbar-light">
                             <!-- Logo -->
-                            <div class="logo" style="margin-top: 10px;">
-                                <a href="index.html"> 
-                                    <img class="main-logo" src="assets/img/socker-logo-white.png" data-rjs="2" alt="Socker">
-                                    <img class="sticky-logo" src="assets/img/socker-logo.png" data-rjs="2" alt="Socker">
-                                </a>
-                            </div>
-                            <!-- End of Logo -->
-                        </div>
-                        <div class="col-xl-9 col-lg-9 col-md-8 col-9">
-                            <div class="menu--inner-area clearfix">
-                                <div class="menu-wraper">
-                                    <nav>
-                                        <!-- Header-menu -->
-                                        <div class="header-menu dosis">
-                                            <ul>
-                                                <li><a href="#projects">Projekt</a></li>
-                                                <li><a href="#features">Kontakt</a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- End of Header-menu -->
-                                        
-                                    </nav>
+                            <a class="navbar-brand" href="#"><img src="./img/logo_black.png" alt="" style="width: 150px;"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <!-- Menu Area -->
+                            <div class="collapse navbar-collapse" id="ca-navbar">
+                                <ul class="navbar-nav ml-auto" id="nav">
+                                    <li class="nav-item active"><a class="nav-link" href="#home">Start</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#about">Vad är Socker</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#features">Funktioner</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                                </ul>
+                                <div class="sing-up-button d-lg-none">
+                                    <a href="https://042a.github.io/socker/start">Ladda ner Socker</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-5 d-md-block d-none">
-                                <!-- <div class="urgent-call text-right">
-                                        <a href="#" class="btn">Ladda ner SockerAdmin</a>
-                                    </div> -->
-                        </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Signup btn -->
+                <div class="col-12 col-lg-2">
+                    <div class="sing-up-button d-none d-lg-block">
+                        <a href="https://042a.github.io/socker/start">Ladda ner Socker</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Header Navbar-->
     </header>
-    <!-- End of Main header -->
+    <!-- ***** Header Area End ***** -->
 
-    <!-- home banner area -->
-    <div class="banner-area-inner"  id="projects">
-        <div class="banner-inner-area banner-area1 banner2">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-8 col-lg-6 col-xl-5">
-                        <!-- banner text -->
-                        <div class="banner-text-inner">
-
-                            <style>
-                                
-                                .test123 {
-                                margin-top: 20px;
-                                padding-bottom: 20px;
-                                width: 100%;
-                             
-                                border-radius: 15px;
-                                -webkit-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.3);
-                                -moz-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.3);
-                                box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.3);
-                                background-color:  white;
-                                padding: 15px;
-                                }
-
-                            
-                            </style>
-                            <!-- Display the countdown timer in an element -->
-                          
-            
-<h2 id="demo"class="white-text">Socker - En godisapp</h2>
-                            
-                            <p class="white-text">Godisentusiastens bästa vän är äntligen här. Skapa familjens favoritblandning tillsammans och skicka smidigt dina preferenser till det stackars sändebudet! </p>
-                            <div class="test123">
-                                    <h2 class="main inverted" style="color:rgb(20, 20, 20); ">Tack för att du väntar!</h2>
-                                <p>Godisappen kommer att släppas i flera etapper:</p>
-
-                            <!-- Contents -->
-
-<ul class="info-text" style="font-size: 16px;     list-style: none;
-padding-left: 0;">
-
-<li>Inital build (Internt)  - <span style="font-weight: 900; color: rgb(3, 204, 80)">8-05-19</span>  <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Inititial build of final branch. Main functions are in place, however, supporting functions as installer, server setup, cache management and service worker are still not in place. Build is strictly internal due to security issues. </span></li>
-<li>Alpha 1 (Internt)  -  <span style="font-weight: 900; color: rgb(3, 204, 80)">12-05-19</span>  <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Service worker research, installer and cache in place, release for user group.</span></li>
-<li>Alpha 2 (Internt) -  <span style="font-weight: 900; color: rgb(191, 204, 3)">14-05-19</span>  <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Security and installation.</span></li>
-<li>Alpha 3 (Internt) <span style="font-weight: 900; color: rgb(191, 204, 3)">17-05-19</span> <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Tidy code.</span></li>
-<li>Beta (Öppen) - <span style="font-weight: 900; color: rgb(63, 3, 204)">Förhoppningsvis i Maj!</span><span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Tidy code. Service worker full functionality.</span></li>
-<li>Full release <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Tidy code. Godis Service is now handling all data operations.</span></li>
-<li>Post release (July?) <span style="display: block; font-weight: 100; font-family: 'Poppins'; font-size: 14px; text-transform: none;">Marketing and update strategy.</span></li>
-</ul>
-                                </div>
-                        </div>
-                        <!-- banner text -->
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 col-md-4 offse-xl-2">
-                 
-                        <!-- banner image-->
-                        <div class="banner-image">
-                            <img src="assets/img/socker-app-1.png" alt="">
-                        </div>
-                        <!--End of banner image-->
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="section_1_1 clearfix" id="home">
+         
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <img src="./img//ilogo_black.png" alt="">
+                      <!--   <div class="sing-up-button d-lg-block" style="text-align: center; margin-top: 100px;">
+                                <a href="https://042a.github.io/socker/start">Ladda ner Socker</a>
+                            </div> -->
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    
-    <!-- home banner area -->
-    <div class="banner-area-inner">
-        <div class="banner-inner-area banner-area1 banner1">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-8 col-lg-6 col-xl-5">
-                        <!-- banner text -->
-                        <div class="banner-text-inner">
+          
 
-                            
-                            <h1 class="white-text">Kokaägg.nu</h1>
-                            <p class="white-text">Ett härligt självdöende prototypprojekt. Koka ägg som sig bör. Säljes domän 500sek.</p>
-                            <a href="http://www.kokaägg.nu" class="btn">KOKA ÄGG   . NU</a>
-                        </div>
-                        <!-- banner text -->
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 col-md-4 offse-xl-2">
-                 
-                        <!-- banner image-->
-                        <div class="banner-image">
-                            <img src="assets/img/socker-app-2.png" alt="">
-                        </div>
-                        <!--End of banner image-->
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- End of home banner area -->
-    <!-- download app -->
-    <section class="border-top pt-110 pb-150" id='features'>
+
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+
+    <!-- ***** Special Area Start ***** -->
+    <section class="special-area bg-white section_padding_100" id="about">
         <div class="container">
-                <div class="row align-items-center">
-                        <div class="col-md-12 col-lg-6 col-xl-5">
-                                <h4>
-                                        042a@github
-                                    </h4>    
-                            <h4>
-                                    042ahlstrand@gmail.com
-                                </h4>
+            <div class="row d-flex justify-content-center ">
+                <div class="col-11 col-sm-8 ">
+                    <!-- Section Heading Area -->
+                    <div class="">
+                        <h2 class="socker">Vad är socker</h2>
+                     <!--    <div class="line-shape"></div> -->
+                        <p class="socker">Förutom den där söta substansen som gör dig glad är Socker en app för lösgodisentusiaster. Du har tagit steget och vet att Lysmelk tillsammans med en Fruktnapp, skapar en ny smak som intresserar ditt sinne. Eller kanske har du en särskild ritual där Dumlen alltid ska företrädas av en något syrligt, tex en Sur banan och efterföljas av en respektabel Jungelvrål</p>
+                    </div>
+                </div>
+            </div>
 
+           
+        </div>
+    </section>
+    <!-- ***** Special Area End ***** -->
+
+    <!-- ***** Awesome Features Start ***** -->
+    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-8">
+                    <!-- Heading Text -->
+                    <div class="">
+                            <h2 class="socker">Funktioner<br><br></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Single Feature Start -->
+                <div class="col-11 col-sm-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-lg-6">
+                            <div class="single-feature">
+                                <i class="ti-search" aria-hidden="true"></i>
+                                <h5>Kartlägg dina favoriter</h5>
+                                <p class="socker">Utforska över 300 godissorter. Minns tillbaka på klassiska favoriter och upptäck nya spännande smaker.</p>
+                            </div>
                         </div>
+        
+                        <div class="col-12 col-sm-12 col-lg-6">
+                            <div class="single-feature">
+                                <i class="ti-bag" aria-hidden="true"></i>
+                                <h5>Skapa och spara favoritmixar</h5>
+                                <p class="socker">Varje tillfälle har sin mix. Skapa digitala godispåsar, och välj själv innehållets karaktär.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-6">
+                                <div class="single-feature">
+                                    <i class="ti-share" aria-hidden="true"></i>
+                                    <h5>Låt nån annan göra grovjobbet</h5>
+                                    <p class="socker">Lugn, det här är inte ännu en träningsapp. Skicka dina godismixar till ditt sändebud, och du kan ligga kvar i soffan.</p>
+                                </div>
+                            </div>
+            
+                            <div class="col-12 col-sm-12 col-lg-6">
+                                <div class="single-feature">
+                                    <i class="ti-comments" aria-hidden="true"></i>
+                                    <h5>Familjens delade blandning TBA</h5>
+                                    <p class="socker">Bjud in flera intressenter till din godismix och skapa tillsammans en gemensam mix.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
 
-                        <div class="col-lg-5 offset-lg-1 col-md-4 offse-xl-2">
+         
+            </div>
+
+        </div>
+    </section>
+    <!-- ***** Awesome Features End ***** -->
 
 
-                    <div class="download-app-inner text-center">
-                       
 
+    <!-- ***** App Screenshots Area Start ***** -->
+    <section class="app-screenshots-area bg-white section_padding_0_100 clearfix" id="screenshot">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-8">
+                    <!-- Heading Text  -->
+           
+                        <h2 class="socker">Lite bilder</h2>
+                        
+               
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-8">
+                    <!-- App Screenshots Slides  -->
+                    <div class="app_screenshots_slides owl-carousel">
+                        <div class="single-shot">
+                            <img src="img/scr-img/app-1.jpg" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="img/scr-img/app-2.jpg" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="img/scr-img/app-3.jpg" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="img/scr-img/app-4.jpg" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="img/scr-img/app-5.jpg" alt="">
+                        </div>
+                        <div class="single-shot">
+                            <img src="img/scr-img/app-3.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   
+    <!-- ***** App Screenshots Area End *****====== -->
 
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-8">
+                        <!-- Heading Text -->
+                        <div class="">
+                                <h2 class="socker">Backlog och sånt<br><br></h2>
+               
 
-    <script src="assets/js/menu.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Inital build (Internt) - 8-05-19
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                        Inititial build of final branch. Main functions are in place, however, supporting functions as installer, server setup, cache management and service worker are still not in place. Build is strictly internal due to security issues.              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Alpha 1 (Internt) - 12-05-19
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                        Service worker research, installer and cache in place, release for user group.                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Alpha 2 (Internt) - 14-05-19
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                        Security and installation.
+                    </div>
+              </div>
+            </div>
+            <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                                Alpha 3 (Internt) 22-05-19
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapse4" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                            UI bug fixes. Inline CSS cleanups. Filter function in create-a-bag. Ugly menu for future-proofing etc.
 
-    
-    </body>
-    
-    </html>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                        <div class="card-header" id="heading5">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                                   Beta (Open) 28-05-19
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapse5" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+                            User UI properly styled, icons, splashscreens, taste-preferense sliders redone. 
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                            <div class="card-header" id="heading6">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                                       Full release, June
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapse6" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                              <div class="card-body">
+                                  Share bag, Offline-Mode fully implemented, GodisService fully implemented centralize data-management. 
+                                </div>
+                            </div>
+                          </div>
+          </div>
+
+          </div>
+          </div>
+          </div>
+          </div>
+          </section>
+
+    <!-- ***** Contact Us Area Start ***** -->
+    <section class="footer-contact-area section_padding_100 clearfix" id="contact" style="margin-bottom: 800px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <!-- Heading Text  -->
+                
+                            <h2 class="socker">Kontakt</h2>
+                 
+                        <p class="socker">Skriv vad du vill. Bästa sättet att komma i direkt kontakt är att lägga till mig på 042A@github.com</p>
+     
+                </div>
+                <div class="col-md-4">
+                    <!-- Form Start-->
+                    <div class="contact_from">
+                        <form action="#" method="post">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Sorry" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="email" id="email" placeholder="Det här formuläret" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Är inte funktionellt :)" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Skicka</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class=" text-center section_padding_70 clearfix">
+        <!-- footer logo -->
+        <div class="wellcome-heading">
+            <img src="./img/ilogo_black.png" alt="">
+        </div>
+    </footer>
+    <!-- ***** Footer Area Start ***** -->
+
+    <!-- Jquery-2.2.4 JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
